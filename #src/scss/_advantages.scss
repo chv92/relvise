@@ -1,0 +1,95 @@
+.page {
+		// .page__advantages
+		&__advantages {
+            margin: 80px 0px 80px 0px;
+            @media(max-width: 467px){
+             margin: 60px 0px 40px 0px; 
+            }
+		}
+}
+.advantages {
+		// .advantages__container
+		&__container {
+	    }
+		// .advantages__header
+		&__header {
+            margin-bottom: 50px;
+		}
+		// .advantages__body
+		&__body {
+            display: flex;
+            margin: 0px -15px -30px;
+            flex-wrap: wrap;
+            
+            
+            
+		}
+		// .advantages__column
+		&__column {
+            padding: 0px 15px;
+            flex: 0 1 25%;
+            margin-bottom: 30px;
+            @media (max-width: 1020px){
+                flex: 0 1 50%;
+            }
+            @media (max-width: 515px){
+                flex: 0 1 100%;
+            }
+		}
+		// .advantages__item
+		&__item {
+            background-color: #fff;
+            padding: 30px 40px;
+            text-align: center;
+            >*:not(:last-child){
+                margin-bottom: 10px;
+            }
+		}
+		// .advantages__icon
+		&__icon {
+            height: 48px;
+            display: flex;
+            align-items:flex-end;
+            justify-content: center;
+		}
+		// .advantages__value
+		&__value {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 142%;      
+        letter-spacing: 0.2px;
+        color: #252B42;
+
+		}
+		// .advantages__text
+		&__text {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.1px;
+        color: #737373;
+		}
+}
+
+.header-block {
+        text-align: center;
+		// .header-block__tittle
+        :not(:last-child){
+            margin-bottom: 10px;
+        }
+		&__tittle {
+            font-size: 40px;
+           line-height: 142%;
+           letter-spacing: 0.2px;
+           color: #252B42;
+           font-weight: 700;
+		}
+
+		// .header-block__subtitle
+
+		&__subtitle {
+            color: #737373;
+            font-size: 14px;
+            line-height: 143%;
+            letter-spacing: 0.2px;
+		}
+}
