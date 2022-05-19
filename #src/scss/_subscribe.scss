@@ -1,0 +1,107 @@
+.page {
+		// .page__subscribe
+		&__subscribe {
+		}
+}
+.subscribe {
+    position: relative;
+    padding-bottom:20px;
+	// .subscribe__container
+		&__container {
+		}
+		// .subscribe__body
+		&__body {
+            position: relative;
+            z-index: 3;
+            padding: 30px 50px;
+            align-items: center;
+            background-color:#17213C ;
+            border-radius: 2px;
+            @media (min-width: 1070px){
+                  margin: 0px 30px;
+            }
+            @media (min-width: 810px) {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px 25px;
+            }
+             @media (max-width: 810px) {
+                margin: 0px -15px;
+                padding: 20px 15px;
+             }
+		}
+		// .subscribe__title
+		&__title {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 133%;
+            letter-spacing: 0.1px;
+            color: #FFFFFF;      
+            @media (max-width: 810px) {
+                padding-bottom: 15px;
+            }    
+            @media (min-width: 810px) {
+                max-width: 266px;
+            }
+		}
+
+		// .subscribe__form
+		&__form {
+            flex: 0 1 50%;
+            display: flex;
+            align-items: center;
+		}
+
+		// .subscribe__input
+		&__input {
+            width: 100%;
+            flex: 1 1 auto;
+            min-height: 58px;
+            background: #F9F9F9;
+            border: 1px solid #E6E6E6;
+            border-radius:  5px 0px 0px 5px;
+            padding: 0px 20px;
+            font-size: 14px;
+            line-height: 200%;
+            letter-spacing: 0.2px;
+            color: #737373;
+		}
+        &__input:focus{
+              color: #000;
+              background: #dad1d1;
+        }
+		// .subscribe__button
+
+		&__button {
+            background: #FF7B47;
+            border: 1px solid #E6E6E6;
+            border-radius: 0px 5px 5px 0px;
+            display: flex;
+            min-height:58px;
+            align-items: center;
+            font-size: 14px;
+            line-height: 200%;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: #FFFFFF;
+            padding: 0px 22px;
+            @media (max-width: 810px){
+                padding: 0px 11px;
+            }
+        }
+         &__button:hover{
+                  background-color: #eb6f3e;
+            }
+            &__button:active{
+                  background-color: #eb6f3e;
+            }
+}
+.subscribe::before{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        background:#252B42; 
+        height: 77px;
+        left: 0px;
+}

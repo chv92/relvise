@@ -1,0 +1,147 @@
+.page {
+
+		// .page__whoweare
+
+		&__whoweare {
+            padding-top: 80px;
+			padding-bottom: 130px;
+			@media(max-width: 764px){
+			padding-top: 40px;
+			padding-bottom: 50px;
+			}
+
+		}
+}
+.whoweare {
+	background-color: #fff;
+		// .whoweare__header
+
+		&__header {
+            margin: 0px 0px 100px 0px;
+			@media(max-width: 764px){
+			margin: 0px 0px 50px 0px; 
+			}
+		}
+
+		// .whoweare__body
+
+		&__body {
+             display: flex;
+			 align-items: flex-start;
+			  @media (max-width: 950px){
+				 flex-direction: column-reverse;
+				 align-items: stretch ;
+			 }
+			 >*:last-child{
+				 margin-bottom: 30px;
+			 }
+		}
+
+		// .whoweare__video
+
+		&__video {
+            flex: 0 0 57.4%;
+            position: relative;
+            padding-bottom: 42.25%;
+			@media (max-width: 950px) {
+				padding-bottom: 56.25%;	
+			}
+		}
+        &__video iframe{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+
+        }
+
+		// .whoweare__content
+
+		&__content {
+             flex: 1 1 auto;
+             padding-left: 121px;
+			 @media (max-width: 1080px){
+				 padding-left: 30px;
+			 }
+			   @media (max-width: 950px){
+				   padding-left: 0px;
+			   }
+		}
+
+		// .whoweare__tittle
+
+		&__tittle {
+        font-size: 40px;
+        line-height: 142%;
+        letter-spacing: 0.2px;
+        color: #252B42;
+        font-weight: 700;
+		padding: 20px 0px 10px 0px;
+			 @media (max-width: 1080px){
+				 padding-top: 0px;
+			 }
+		}
+
+		// .whoweare__text
+
+		&__text {
+			color:#737373;
+			font-size: 14px;
+			line-height: 142%;
+		}
+
+		// .whoweare__items
+
+		&__items {
+			padding-top:50px;
+			>*:not(:last-child){
+				margin-bottom: 30px;
+			}
+		}
+
+		// .whoweare__item
+
+		&__item {
+		
+			
+		}
+}
+.item-whoweare {
+		display: flex;
+		// .item-whoweare__icon
+
+		&__icon {
+		}
+
+		// .item-whoweare__body
+
+		&__body {
+			flex: 1 1 auto;
+			padding-left: 20px;
+			:not(:last-child){
+				padding-bottom: 5px;
+			}
+		}
+
+		// .item-whoweare__title
+
+		&__title {
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: 0.1px;
+		color: #252B42;
+		font-weight: 700;
+		}
+
+		// .item-whoweare__text
+
+		&__text {
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 171%;
+		letter-spacing: 0.2px;
+		color: #737373;
+		}
+}
